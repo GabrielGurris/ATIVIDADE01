@@ -34,6 +34,14 @@ public class ProdutoRepositorio {
     }
 
     public Produto getProdutosById(int Codigo) {
-        return produtos.get(Codigo);
+        Produto p = new Produto();
+        for (int i=1; i <= produtos.size(); i++)
+        {
+            if (produtos.get(i).getCodigo() == Codigo){
+                p = produtos.get(i);
+                return p;
+            }
+        }
+        return null;
     }
 }
