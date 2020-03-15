@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <style>
+        html{
+            background-color: cyan;
+        }
+        div.config{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="config">
+        <h1>MENU</h1>
+        <div>
+            <p>Produto com codigo 1: </p>
+            <a onclick="tela1()" href="http://localhost:8080/produto/1">localhost:8080/produto/1</a>
+        </div>
+
+        <div>
+            <p>Produtos em estoque: </p>
+            <a onclick="tela2()" href="http://localhost:8080/produtosEmEstoque">http://localhost:8080/produtosEmEstoque</a>
+        </div>
+
+        <div>
+            <p>Produtos com valor acima de 20: </p>
+            <a onclick="tela3()" href="http://localhost:8080/produtosValorAcima/20">http://localhost:8080/produtosValorAcima/20</a>
+        </div>
+
+        <div>
+            <p>Produtos com valor abaixo de 20: </p>
+            <a onclick="tela4()" href="http://localhost:8080/produtosValorAbaixo/20">http://localhost:8080/produtosValorAbaixo/20</a>
+        </div>
+    </div>
+
+    <script>
+        tela1()
+        {
+            window.open("http://localhost:8080/produto/1");
+        }
+        tela2()
+        {
+            window.open("http://localhost:8080/produtosEmEstoque");
+        }
+        tela3()
+        {
+            window.open("http://localhost:8080/produtosValorAcima/20");
+        }
+        tela4()
+        {
+            window.open("http://localhost:8080/produtosValorAbaixo/20");
+        }
+    </script>
+</body>
+</html>

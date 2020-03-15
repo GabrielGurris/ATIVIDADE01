@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+
+    <style>
+        html{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>PRODUTO SELECIONADO</h1>
+    <div th:if="${produto}">
+        <table>
+            <td th:text="${produto?.codigo}"></td>
+            <td th:text="${produto?.nome}"></td>
+            <td th:text="${produto?.valor}"></td>
+            <td th:text="${produto?.estoque}"></td>
+        </table>
+    </div>
+
+    <div th:unless="${produto}">
+        <div>
+            ERRO - TENTE NOVAMENTE
+        </div>
+    </div>
+
+
+</body>
+</html>
