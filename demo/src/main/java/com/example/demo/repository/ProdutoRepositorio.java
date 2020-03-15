@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class ProdutoRepositorio {
 
-    public HashMap <Integer, Produto> produtos = new HashMap <Integer, Produto> ();
+    public HashMap <Integer, Produto> produtos = new HashMap <Integer, Produto>();
 
     public ProdutoRepositorio()
     {
